@@ -1,29 +1,31 @@
 package com.benbeehler.ms;
 
-import java.util.Random;
+import java.io.IOException;
+import java.util.Scanner;
 
 public class MSolver {
 
 	public static void main(String[] args) throws IOException{
-       Scanner sc = new Scanner(System.in);
-       System.out.println("please enter the coordinates of each line") /*Update these instructions please*/
+		Scanner sc = new Scanner(System.in);
+       	System.out.println("please enter the coordinates of each line"); 
 		long start = System.nanoTime();
 
 		double tL = sc.nextDouble();
-       System.out.println("Line #1 x coordinate = " + tL)
+		
+		System.out.println("Line #1 x coefficient = " + tL);
 		double bL = sc.nextDouble();
-		System.out.println("Line #1 y coordinate = " bL);
+		System.out.println("Line #2 x coefficient = " + bL);
        
 		double tR = sc.nextDouble();
-       System.out.println("Line #2 x coordinate = " tR);
+		System.out.println("Line #2 y coefficient = " + tR);
 		double bR = sc.nextDouble();
-		System.out.println("Line #2 y coordinate = " bR);
+		System.out.println("Line #2 y coefficient = " + bR);
 
 		double xC = sc.nextDouble();
-       System.out.println("Line #3 x coordinate = " xC);
+		System.out.println("Line #1 constant = " + xC);
 		double yC = sc.nextDouble();
-		System.out.println("Line #3 y coordinate = " yC);
-       sc.close();
+		System.out.println("Line #2 constant = " + yC);
+		sc.close();
 		double[] values = new double[] { tL, bL, tR, bR, xC, yC };
 		init(values);
 		
