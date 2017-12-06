@@ -4,17 +4,26 @@ import java.util.Random;
 
 public class MSolver {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException{
+       Scanner sc = new Scanner(System.in);
+       System.out.println("please enter the coordinates of each line") /*Update these instructions please*/
 		long start = System.nanoTime();
-		double tL = new Random().nextInt(100000) + new Random().nextDouble();
-		double bL = new Random().nextInt(100000) + new Random().nextDouble();
-			
-		double tR = new Random().nextInt(100000) + new Random().nextDouble();
-		double bR = new Random().nextInt(100000) + new Random().nextDouble();
-			
-		double xC = new Random().nextInt(100000) + new Random().nextDouble();
-		double yC = new Random().nextInt(100000) + new Random().nextDouble();
-			
+
+		double tL = sc.nextDouble();
+       System.out.println("Line #1 x coordinate = " + tL)
+		double bL = sc.nextDouble();
+		System.out.println("Line #1 y coordinate = " bL);
+       
+		double tR = sc.nextDouble();
+       System.out.println("Line #2 x coordinate = " tR);
+		double bR = sc.nextDouble();
+		System.out.println("Line #2 y coordinate = " bR);
+
+		double xC = sc.nextDouble();
+       System.out.println("Line #3 x coordinate = " xC);
+		double yC = sc.nextDouble();
+		System.out.println("Line #3 y coordinate = " yC);
+       sc.close();
 		double[] values = new double[] { tL, bL, tR, bR, xC, yC };
 		init(values);
 		
