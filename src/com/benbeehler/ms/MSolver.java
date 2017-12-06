@@ -4,23 +4,14 @@ public class MSolver {
 
 	public static void main(String[] args) {
 		long start = System.nanoTime();
-		/*double tL = new Random().nextInt(100000) + new Random().nextDouble();
+		double tL = new Random().nextInt(100000) + new Random().nextDouble();
 		double bL = new Random().nextInt(100000) + new Random().nextDouble();
 			
 		double tR = new Random().nextInt(100000) + new Random().nextDouble();
 		double bR = new Random().nextInt(100000) + new Random().nextDouble();
 			
 		double xC = new Random().nextInt(100000) + new Random().nextDouble();
-		double yC = new Random().nextInt(100000) + new Random().nextDouble();*/
-		
-		double tL = 3;
-		double bL = 5;
-			
-		double tR = 4;
-		double bR = 2;
-			
-		double xC = 5;
-		double yC = 6;
+		double yC = new Random().nextInt(100000) + new Random().nextDouble();
 			
 		double[] values = new double[] { tL, bL, tR, bR, xC, yC };
 		init(values);
