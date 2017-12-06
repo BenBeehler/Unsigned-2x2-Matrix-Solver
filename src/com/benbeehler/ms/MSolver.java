@@ -1,5 +1,7 @@
 package com.benbeehler.ms;
 
+import java.util.Random;
+
 public class MSolver {
 
 	public static void main(String[] args) {
