@@ -38,8 +38,6 @@ public class MSolver {
 		
 		System.out.println();
 		
-		int i = 0;
-		
 		do {
 			System.out.println("solving...");
 			System.out.println();
@@ -52,12 +50,6 @@ public class MSolver {
 			bR = values[3];
 			xC = values[4];
 			yC = values[5];
-			
-			if(i == 10) {
-				System.exit(1);
-			}
-			
-			i++;
 		} while(!(bL == 0 && tR == 0));
 		
 		System.out.println("Point: ");
