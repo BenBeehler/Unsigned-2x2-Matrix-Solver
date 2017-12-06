@@ -8,15 +8,22 @@ public class MSolver {
        Scanner sc = new Scanner(System.in);
        System.out.println("please enter the coordinates of each line") /*Update these instructions please*/
 		long start = System.nanoTime();
+
 		double tL = sc.nextDouble();
+       System.out.println("Line #1 x coordinate = " + tL)
 		double bL = sc.nextDouble();
-			
+		System.out.println("Line #1 y coordinate = " bL);
+       
 		double tR = sc.nextDouble();
+       System.out.println("Line #2 x coordinate = " tR);
 		double bR = sc.nextDouble();
-			
+		System.out.println("Line #2 y coordinate = " bR);
+
 		double xC = sc.nextDouble();
+       System.out.println("Line #3 x coordinate = " xC);
 		double yC = sc.nextDouble();
-			
+		System.out.println("Line #3 y coordinate = " yC);
+       sc.close();
 		double[] values = new double[] { tL, bL, tR, bR, xC, yC };
 		init(values);
 		
